@@ -1,0 +1,52 @@
+format = """
+$character$username@$hostname:$directory$git_branch$git_status$time on $custom
+\\$ 
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[username]
+show_always = true
+style_user = "fg:green"
+style_root = "fg:red"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]()"
+
+[directory]
+truncation_length = 3
+truncation_symbol = ".../"
+style = "fg:bold cyan"
+format = "[$path]($style)"
+
+[git_branch]
+symbol = "[ GIT](fg:10)"
+format = '$symbol [$branch](fg:13)'
+
+[git_status]
+style = ""
+format = '[$all_status$ahead_behind]($style)'
+
+[time]
+disabled = false
+#time_format = "%R" # Hour:Minute Format
+time_format = " %R"
+style = "fg:yellow"
+format = "[$time]($style)"
+
+[character]
+success_symbol = "[>>](fg:bold green)"
+error_symbol = "[>>](fg:bold red)"
+vicmd_symbol = "[<<](bold green)"
+vimcmd_visual_symbol = "[<v](fg:bold yellow)"
+vimcmd_replace_symbol = "[<R](fg:bold 13)"
+vimcmd_replace_one_symbol = "[<r](fg:bold 13)"
+
+[custom.date]
+command = "date \"+%Y%m%d\""
+when = "true"
+style = "fg:yellow"
+format = "[$output]($style)"

@@ -1,0 +1,52 @@
+{
+    "enable-bar-scroll":true,
+        "height": 24,
+
+        "modules-left": ["sway/workspaces"],
+        "niri/workspaces": {
+            "all-outputs": false
+        },
+
+        "modules-center": ["sway/window"],
+        "niri/window": {
+            "format": "{title}",
+            "max-length": 50
+        },
+
+       "modules-right": [
+            "network#speed",
+            "backlight",
+            "pulseaudio",
+            "clock#tokyo",
+            "clock",
+            "battery",
+            "tray"
+        ],
+        "tray": {
+            "spacing": 10
+        },
+        "battery": {
+            "format": "battery: {capacity}%"
+        },
+        "clock": {
+            "format": "{:%a, %m/%d %H:%M}"
+        },
+        "clock#tokyo": {
+            "format": "Tokyo: {:%H:%M}",
+            "timezone": "Asia/Tokyo"
+        },
+        "pulseaudio": {
+            "format": "Volume: {volume}%",
+            "format-muted": "Volume: Muted"
+        },
+        "network#speed": {
+            "interval": 1,
+            "format": "{ifname}",
+            "format-wifi": "{icon} ↓{bandwidthDownBits}:{bandwidthUpBits}↑",
+            "format-ethernet": "󰈁 ↓{bandwidthDownBits}:{bandwidthUpBits}↑",
+            "format-disconnected": "󰌙",
+            "format-linked": "󰈁 {ifname} (No IP)",
+            "max-length": 30,
+            "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+        }
+}

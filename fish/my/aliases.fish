@@ -1,0 +1,48 @@
+alias v='nvim'
+alias e='emacs -nw'
+
+alias cmd='command'
+
+alias up='cd ..'
+alias dup='cd ../..'
+alias trup='cd ../../..'
+
+#alias ls='eza -F'
+alias sl='ls -r'
+alias ll='ls -l'
+alias la='ls -A'
+alias lal='ls -Al'
+alias lr='ls -R'
+alias lar='ls -AR'
+alias ds='ls --group-directories-first'
+alias da='ds -A'
+alias dl='ds -l'
+alias dal='ds -Al'
+alias dr='ds -R'
+alias dar='ds -AR'
+
+alias cpd='cp -R'
+alias rmd='rm -R'
+alias rmrf='rm -Rf'
+alias rmfr='rm -fR'
+
+alias py='python'
+alias hd='hexdump'
+alias ly='lilypond'
+alias md='marktext'
+alias mt='marktext'
+alias zen='zen-browser'
+alias dol='dolphin'
+alias oku='okular'
+alias gwen='gwenview'
+alias libre='libreoffice'
+alias ff='firefox'
+alias ffx='firefox'
+alias ffg='fontforge'
+alias fl='floorp'
+
+alias sbcli='rlwrap -n sbcl --noinform'
+alias sbcls='sbcl --script'
+
+alias nyc='nyackman'
+

@@ -1,0 +1,45 @@
+add_newline = false
+
+format = """
+$username$hostname \
+$directory \
+$git_branch$git_status \
+$time
+$character
+"""
+
+[username]
+show_always = true
+format = "[$user]"
+style_user = "bg:blue fg:black"
+style_root = "bg:red fg:black"
+
+[hostname]
+ssh_only = false
+format = "[@$hostname]"
+style = "bg:blue fg:black"
+
+[directory]
+format = "[ $path ]"
+style = "bg:cyan fg:black"
+truncation_length = 3
+truncation_symbol = ".../"
+
+[git_branch]
+symbol = "git:"
+format = "[ $symbol $branch ]"
+style = "bg:magenta fg:white"
+
+[git_status]
+format = "[$all_status$ahead_behind]"
+style = "bg:magenta fg:white"
+
+[time]
+disabled = false
+time_format = "%R"
+format = "[ $time ]"
+style = "bg:yellow fg:black"
+
+[character]
+success_symbol = "$>"
+error_symbol = "$>"
