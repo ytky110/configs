@@ -46,3 +46,4 @@ alias sbcls='sbcl --script'
 
 alias nyc='nyackman'
 
+alias cal='cal -m'
