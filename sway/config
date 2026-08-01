@@ -5,6 +5,8 @@ input type:keyboard {
     repeat_rate 55
 }
 
+exec_always systemctl --user import-environment SWAYSOCK WAYLAND_DISPLAY DISPLAY
+
 #exec_always swaybg -i /home/yutaka/pictures/other/sway.webp -m fill
 #exec_always swaybg -c 000000 -m fill
 #exec_always swaybg -c 010d10 -m fill
