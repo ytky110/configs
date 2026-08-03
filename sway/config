@@ -1,6 +1,7 @@
 input type:keyboard {
-    xkb_layout ch
-    xkb_variant fr
+    #xkb_layout ch
+    #xkb_variant fr
+    xkb_layout yutaka
     repeat_delay 180
     repeat_rate 55
 }
