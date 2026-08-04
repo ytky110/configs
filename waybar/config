@@ -37,7 +37,7 @@
         },
         "pulseaudio": {
             "format": "Volume: {volume}%",
-            "format-muted": "Volume: Muted"
+            "format-muted": "Volume: Muted ({volume}%)"
         },
         "network#speed": {
             "interval": 1,
