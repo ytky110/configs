@@ -1,3 +1,5 @@
+# Sway configuration for my laptop
+
 input type:keyboard {
     #xkb_layout ch
     #xkb_variant fr
@@ -12,7 +14,7 @@ exec_always systemctl --user import-environment SWAYSOCK WAYLAND_DISPLAY DISPLAY
 #exec_always swaybg -c 000000 -m fill
 #exec_always swaybg -c 010d10 -m fill
 #exec_always swaybg -i /home/yutaka/pictures/ssbumural/mural.jpg -m fill
-exec_always swaybg -i ~/pictures/wallpaper/mural2-kirby.png -m fill
+#exec_always swaybg -i ~/pictures/wallpaper/mural2-kirby.png -m fill
 output DP-1 scale 1.25
 output DP-2 scale 1.25
 
@@ -137,10 +139,10 @@ bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 # Special keys to adjust brightness via brightnessctl
-#bindsym --locked XF86MonBrightnessDown exec sudo xbacklight -5
-#bindsym --locked XF86MonBrightnessUp exec sudo xbacklight +5
+bindsym --locked XF86MonBrightnessDown exec sudo xbacklight -5
+bindsym --locked XF86MonBrightnessUp exec sudo xbacklight +5
 
-bindsym Print exec grim $HOME/pictures/screenshots/$(date "+%Y-%m-%d_%Hh%Mm%Ss").png
+bindsym Print exec grim $HOME/Pictures/screenshots/$(date "+%Y-%m-%d_%Hh%Mm%Ss").png
 
 #
 # Resizing containers:
