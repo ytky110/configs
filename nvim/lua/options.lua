@@ -7,7 +7,7 @@ o.wrap = true
 vim.opt.showmatch = false
 
 -- tabs options
-local stabn = 2
+local stabn = 4
 local tabn = 8
 o.tabstop = tabn
 o.softtabstop = stabn
