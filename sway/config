@@ -5,7 +5,6 @@ input type:keyboard {
     repeat_delay 180
     repeat_rate 55
 }
-
 exec_always systemctl --user import-environment SWAYSOCK WAYLAND_DISPLAY DISPLAY
 
 #exec_always swaybg -i /home/yutaka/pictures/other/sway.webp -m fill
@@ -47,6 +46,11 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+
+bindsym $mod+Control+Left focus output left
+bindsym $mod+Control+Down focus output down
+bindsym $mod+Control+Up focus output up
+bindsym $mod+Control+Right focus output right
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -161,3 +165,15 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+mode "move" {
+    # left/right/up/down will move the focused container
+    bindsym Left  move left 10px
+    bindsym Right move right 10px
+    bindsym Up    move up 10px
+    bindsym Down  move down 10px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+m mode "move"
