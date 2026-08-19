@@ -5,6 +5,7 @@ $character$username@$hostname:$directory$git_branch$git_status$time on $custom
 
 # Inserts a blank line between shell prompts
 add_newline = false
+scan_timeout = 300
 
 [username]
 show_always = true

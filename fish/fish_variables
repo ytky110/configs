@@ -4,7 +4,7 @@ SETUVAR --export EDITOR:nvim
 SETUVAR --export GRIM_DEFAULT_DIR:/home/yutaka/pictures/screenshots
 SETUVAR --export GTK_USE_PORTAL:1
 SETUVAR --export RUST_BACKTRACE:1
-SETUVAR --export WINEPREFIX:/home/yutaka/\x2ewine\x2dbeatoraja
+SETUVAR --export WINEPREFIX:/home/yutaka/\x2ewine/aqtk
 SETUVAR __fish_initialized:4300
 SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x2314
 SETUVAR fish_user_paths:/home/yutaka/\x2eypkg\x2ed/local/bin\x1e/home/yutaka/\x2elocal/bin\x1e/home/yutaka/\x2enycksys/local/bin\x1e/home/yutaka/\x2enyacksys/bin\x1e/home/yutaka/\x2ecargo/bin\x1e/home/yutaka/bin\x1e/home/yutaka/\x2eyackman/bin\x1e/home/yutaka/\x2eytk/bin
