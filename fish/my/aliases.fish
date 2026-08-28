@@ -8,6 +8,7 @@ alias dup='cd ../..'
 alias trup='cd ../../..'
 
 #alias ls='eza -F'
+alias ls='gls --color -F'
 alias sl='ls -r'
 alias ll='ls -l'
 alias la='ls -A'
