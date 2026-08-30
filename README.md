@@ -2,7 +2,8 @@
 
 My principal configurations under ~/.config/
 
-The home/ directory contains the files symlinked to home.
+The `home/` directory contains the files symlinked to home.
+The `unique/` direcotry contains FreeBSD unique settings.
 
 GNU Stow is useful for managing and installing these files.
 
