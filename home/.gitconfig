@@ -1,0 +1,7 @@
+[user]
+	email = git@yutaka.ch
+	name = Yutaka Goy
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master

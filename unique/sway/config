@@ -26,7 +26,7 @@ exec /home/yutaka/local/bin/fcitx5-xkb-switch-anthy.sh
 exec pulseaudio --start
 exec mako
 
-bindsym $mod+Return exec nice -4 kitty
+bindsym $mod+Return exec nice -4 kitty fish
 bindsym $mod+Alt+Return exec nice -4 kitty sh
 #bindsym $mod+Shift+Return exec nice -5 zen-browser
 #bindsym $mod+Shift+Return exec nice -5 floorp
