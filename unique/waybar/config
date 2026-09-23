@@ -15,11 +15,9 @@
 
        "modules-right": [
             "network#speed",
-            "backlight",
             "pulseaudio",
             "clock#tokyo",
             "clock",
-            "battery",
             "tray"
         ],
         "tray": {
@@ -38,15 +36,6 @@
         "pulseaudio": {
             "format": "Volume: {volume}%",
             "format-muted": "Volume: Muted ({volume}%)"
-        },
-        "network#speed": {
-            "interval": 1,
-            "format": "{ifname}",
-            "format-wifi": "{icon} ↓{bandwidthDownBits}:{bandwidthUpBits}↑",
-            "format-ethernet": "󰈁 ↓{bandwidthDownBits}:{bandwidthUpBits}↑",
-            "format-disconnected": "󰌙",
-            "format-linked": "󰈁 {ifname} (No IP)",
-            "max-length": 30,
-            "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
         }
 }
+

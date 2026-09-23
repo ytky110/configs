@@ -21,10 +21,15 @@ set $mod Mod4
 bindsym $mod+Shift+c reload
 
 exec waybar
+
 exec fcitx5
 exec /home/yutaka/local/bin/fcitx5-xkb-switch-anthy.sh
-exec pulseaudio --start
+
+exec pipewire
+exec pipewire-pulse
 exec mako
+exec /usr/local/libexec/xdg-desktop-portal-wlr
+exec /usr/local/libexec/xdg-desktop-portal-gtk
 
 bindsym $mod+Return exec nice -4 kitty fish
 bindsym $mod+Alt+Return exec nice -4 kitty sh

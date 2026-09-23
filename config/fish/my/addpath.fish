@@ -7,4 +7,5 @@ test -d $HOME/.yackman/bin && fish_add_path $HOME/.yackman/bin
 test -d $HOME/.nyacksys/bin && fish_add_path $HOME/.nyacksys/bin
 test -d $HOME/.nycksys/local/bin && fish_add_path $HOME/.nycksys/local/bin
 test -d $HOME/.ypkg.d/local/bin && fish_add_path $HOME/.ypkg.d/local/bin
+test -d $HOME/.ypkg2.d/local/bin && fish_add_path $HOME/.ypkg2.d/local/bin
 
