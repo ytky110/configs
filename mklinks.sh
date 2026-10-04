@@ -1,7 +1,14 @@
 #!/bin/sh
 
-echo "./config => ./unique"
-stow -v -d "$PWD" -t "config/" unique/
+if [ "$(hostname)" = kyame -a "$(uname)" = FreeBSD ]
+then
+    echo "./config => ./freebsd"
+    stow -v -d "$PWD" -t "$HOME/.config" freebsd/
+elif [ "$(hostname)" = potato ]
+then
+    echo "./config => ./linux-laptop"
+    stow -v -d "$PWD" -t "$HOME/.config" linux-laptop/
+fi
 
 echo
 
