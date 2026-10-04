@@ -119,7 +119,7 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 
 
-bindsym $mod+d exec --no-startup-id rofi -show combi -combi-modi "window,drun,run" -modi combi -theme ~/.config/rofi/theme.rasi
+bindsym $mod+d exec --no-startup-id rofi -show combi -combi-modi "window,drun,run" -modi combi
 bindsym $mod+Shift+d exec --no-startup-id kitty --app-id quickterm
 for_window [app_id="quickterm"] floating enable, resize set width 1000 px height 600 px, move position center
 
@@ -137,8 +137,8 @@ bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 # Special keys to adjust brightness via brightnessctl
-#bindsym --locked XF86MonBrightnessDown exec sudo xbacklight -5
-#bindsym --locked XF86MonBrightnessUp exec sudo xbacklight +5
+bindsym --locked XF86MonBrightnessDown exec sudo xbacklight -5
+bindsym --locked XF86MonBrightnessUp exec sudo xbacklight +5
 
 bindsym Print exec grim $HOME/pictures/screenshots/$(date "+%Y-%m-%d_%Hh%Mm%Ss").png
 
