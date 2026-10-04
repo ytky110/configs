@@ -1,4 +1,5 @@
 test -d $HOME/bin && fish_add_path $HOME/bin
+test -d $HOME/local/bin && fish_add_path $HOME/local/bin
 test -d $HOME/.local/bin && fish_add_path $HOME/.local/bin
 test -d $HOME/.cargo/bin && fish_add_path $HOME/.cargo/bin
 
