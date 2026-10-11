@@ -4,7 +4,8 @@ if status is-interactive
 end
 
 # . $HOME/.aliases.fish
-fzf --fish | source
-zoxide init fish | source
+if command -q fzf
+    fzf --fish | source
+end
 set_fish_theme fish-default
 
