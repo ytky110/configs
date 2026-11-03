@@ -2,6 +2,7 @@ input type:keyboard {
 #    xkb_layout ch
 #    xkb_variant fr
     xkb_layout yutaka
+    xkb_options grp:alt_shift_toggle
     repeat_delay 180
     repeat_rate 55
 }
