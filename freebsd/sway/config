@@ -1,7 +1,7 @@
 input type:keyboard {
-#    xkb_layout ch
+    xkb_layout ch
 #    xkb_variant fr
-    xkb_layout yutaka
+#    xkb_layout yutaka
     xkb_options grp:alt_shift_toggle
     repeat_delay 180
     repeat_rate 55
@@ -24,7 +24,7 @@ bindsym $mod+Shift+c reload
 exec waybar
 
 exec fcitx5
-exec /home/yutaka/local/bin/fcitx5-xkb-switch-anthy_grru.sh
+exec /home/yutaka/local/bin/xkb-switch.sh
 
 exec pipewire
 exec pipewire-pulse

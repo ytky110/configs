@@ -1,41 +1,49 @@
 {
     "enable-bar-scroll":true,
-        "height": 24,
+    "height": 24,
 
-        "modules-left": ["sway/workspaces"],
-        "niri/workspaces": {
-            "all-outputs": false
-        },
+    "modules-left": ["sway/workspaces"],
+    "niri/workspaces": {
+        "all-outputs": false
+    },
 
-        "modules-center": ["sway/window"],
-        "niri/window": {
-            "format": "{title}",
-            "max-length": 50
-        },
+    "modules-center": ["sway/window"],
+    "niri/window": {
+        "format": "{title}",
+        "max-length": 50
+    },
 
-       "modules-right": [
-            "network#speed",
-            "pulseaudio",
-            "clock#tokyo",
-            "clock",
-            "tray"
-        ],
-        "tray": {
-            "spacing": 10
-        },
-        "battery": {
-            "format": "battery: {capacity}%"
-        },
-        "clock": {
-            "format": "{:%a, %m/%d %H:%M}"
-        },
-        "clock#tokyo": {
-            "format": "Tokyo: {:%H:%M}",
-            "timezone": "Asia/Tokyo"
-        },
-        "pulseaudio": {
-            "format": "Volume: {volume}%",
-            "format-muted": "Volume: Muted ({volume}%)"
-        }
+    "modules-right": [
+        "pulseaudio",
+        "clock#tokyo",
+        "clock",
+        "custom/layout",
+        "tray"
+    ],
+    "tray": {
+        "spacing": 10
+    },
+    "battery": {
+        "format": "battery: {capacity}%"
+    },
+    "clock": {
+        "format": "{:%a, %m/%d %H:%M}",
+        "tooltip": false
+    },
+    "clock#tokyo": {
+        "format": "Tokyo: {:%H:%M}",
+        "timezone": "Asia/Tokyo",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "format": "Volume: {volume}%",
+        "format-muted": "Volume: Muted ({volume}%)"
+    },
+    "custom/layout": {
+        "exec": "/home/yutaka/local/bin/get-sway-layout.sh",
+        "interval": 0.2,
+        "format": "{}",
+        "tooltip": false
+    }
 }
 
