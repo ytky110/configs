@@ -24,7 +24,7 @@ bindsym $mod+Shift+c reload
 exec waybar
 
 exec fcitx5
-exec /home/yutaka/local/bin/fcitx5-xkb-switch-anthy.sh
+exec /home/yutaka/local/bin/fcitx5-xkb-switch-anthy_grru.sh
 
 exec pipewire
 exec pipewire-pulse
